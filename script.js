@@ -1,17 +1,18 @@
 var nameInput = document.querySelector('#name');
 var yearInput = document.querySelector('#year');
 var submitButton = document.querySelector('#button');
+var h3Element = document.querySelector('#url');
 
 function updateURL(event){
 	event.preventDefault();
 	var name = nameInput.value;
 	var year = yearInput.value;
-	var h3 = h3.innerText;
-	alert('e');
+	var h3Value = h3Element.value;
+
 	if(name && year){
-		// h3.textContent = `${h3}?name=${name}&year=${year}`;
-		alert('hello');
+		h3Value += `?name=${name}&year=${year}`;
 	}
+	h3Element.textContent = h3Value;
 
 }
 
