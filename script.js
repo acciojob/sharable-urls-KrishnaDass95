@@ -13,10 +13,10 @@ function updateURL(event){
 		h3Value += `?name=${name}&year=${year}`;
 	}
 	else if(name){
-		h3Value += `?name=${name};`
+		h3Value += `?name=${name}`;
 	}
 	else if(year){
-		h3Value += `?year=${year}`
+		h3Value += `?year=${year}`;
 	}
 	h3Element.textContent = h3Value;
 }
