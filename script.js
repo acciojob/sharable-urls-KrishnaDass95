@@ -12,8 +12,13 @@ function updateURL(event){
 	if(name && year){
 		h3Value += `?name=${name}&year=${year}`;
 	}
+	else if(name){
+		h3Value += `?name=${name};`
+	}
+	else if(year){
+		h3Value += `?year=${year}`
+	}
 	h3Element.textContent = h3Value;
-
 }
 
 submitButton.addEventListener('click', updateURL);
