@@ -7,7 +7,7 @@ function updateURL(event){
 	event.preventDefault();
 	var name = nameInput.value;
 	var year = yearInput.value;
-	var h3Value = h3Element.value;
+	var h3Value = h3Element.textContent;
 
 	if(name && year){
 		h3Value += `?name=${name}&year=${year}`;
