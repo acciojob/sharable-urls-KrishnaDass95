@@ -7,6 +7,7 @@ function updateURL(event){
 	var name = nameInput.value;
 	var year = yearInput.value;
 	var h3 = h3.innerText;
+	alert('e');
 	if(name && year){
 		// h3.textContent = `${h3}?name=${name}&year=${year}`;
 		alert('hello');
